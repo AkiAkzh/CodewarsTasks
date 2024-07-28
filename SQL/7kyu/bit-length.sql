@@ -12,7 +12,7 @@
 
 SELECT 
   id,
-  CHAR_LENGTH(name) AS name,
+  8 * LENGTH(name) AS name,
   birthday,
-  CHAR_LENGTH(race) AS race
+  8 * LENGTH(race) AS race
 FROM demographics;
